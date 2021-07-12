@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    padding: 0;
+
 }
 
 .row {
@@ -42,6 +44,230 @@ body {
 }
 
 .container {
-    margin-top: 100px;
-    margin-left: 100px;
+    width: 100%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.login {
+    
+    
+    max-width: 200px;
+    width: auto;
+    margin: auto;
+    display: block;
+  
+}
+
+.login label b, span, label {
+
+    color: floralwhite;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+b {
+    text-decoration: none;
+}
+
+.youtubeVid {
+    margin-left: 30%;
+    border: 2px solid;
+    padding: 0;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#rememberMe , span{
+    padding-left: 20px;
+}
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color:cornflowerblue;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    margin: 10px;
+}
+
+input {
+    margin: 10px 10px 10px 0px;
+}
+
+.topnav-left {
+    display: flex;
+    float: left;
+}
+.topnav-right {
+    display: flex;
+    float: right;
+}
+
+nav ul.topnav li a:hover {
+    background-color :dimgrey;
+    color: white;
+}
+
+.dropdownIcon {
+    display: none;
+
+}
+
+/* ############## CUSTOM STYLES ######################################## */
+
+#loginSection {
+    height: 200px;
+    background-color: gray; /* For browsers that do not support gradients */
+    background-image: linear-gradient(blue, gray);
+    padding: 0;
+  }
+
+
+
+
+.rowLogin {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.rowLogin::after {
+
+    display: table;
+    clear: both;
+    content: none;
+}
+
+.col-1-log {width:8.33%}
+.col-2-log {width:16.66%}
+.col-3-log {width:25%}
+.col-4-log {width:33.33%}
+.col-5-log {width: 41.66%;}
+.col-6-log {width:50%;}
+.col-7-log {width:58.33%;}
+.col-8-log {width:66.66%;}
+.col-9-log {width: 75%;}
+.col-10-log {width: 83.33%;}
+.col-11-log {width: 91.66%;}
+.col-12-log {width: 100%;}
+
+
+
+/* ############## CUSTOM STYLES ######################################## */
+
+/*media query to get the screen size*/
+
+@media screen and (max-width:680px) {
+
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+     
+    .dropdownIcon {
+        display: flex !important;
+
+        float: right;
+    }
+
+    ul.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right:0;
+    }
+
+    ul.responsive {
+ 
+        position: relative;
+   
+   }
+   
+   ul.responsive li {
+   
+       display: inline;
+       float: none;
+   }
+   
+   ul.responsive li a {
+   
+       display: block;
+       text-align: left;
+   }
+
+}
+    
+/* ########################## More Info Section ################### */
+
+.infoRow {
+    display: flex;
+    align-items: center;
+}
+
+.infoRow::after {
+
+    display: table;
+    clear: both;
+    content: none;
+}
+
+.infoRowElement {
+    background-color:black;
+    box-shadow: 2px -2px 5px 10px rgba(0, 0,0,0.15);
+}
+.icon {
+    width: 100%;
+}
+
+.infoRowLabel {
+    color: black;
+    text-align: center;
+    display: block;
+}
+
+article p {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.natureIcon {
+    display: block;
+    margin: auto;
+
+    box-shadow: -2px -2px 5px 10px rgba(0, 0,0,0.15);
+}
+
+.footsy {
+    background-color: #666;
+    padding-left: 10%;
+}
+
+.footsy h1 {
+    font-size: 20px;
+    color: white;
+}
+
+.footsy ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.footsy ul li {
+    line-height: 1.2;
 }
